@@ -92,7 +92,7 @@ if [ $(uname) == Linux ]; then
                 -headerdir $PREFIX/include/qt \
                 -archdatadir $PREFIX \
                 -datadir $PREFIX \
-                -release \
+                -debug \
                 -opensource \
                 -confirm-license \
                 -shared \
@@ -150,7 +150,7 @@ if [ $(uname) == Darwin ]; then
                 -archdatadir $PREFIX \
                 -datadir $PREFIX \
                 -R $PREFIX/lib \
-                -release \
+                -debug \
                 -opensource \
                 -confirm-license \
                 -shared \

@@ -154,7 +154,7 @@ call configure ^
      -opensource ^
      -openssl ^
      -platform win32-msvc%VS_YEAR% ^
-     -release ^
+     -debug ^
      -shared ^
      -qt-freetype ^
      -system-libjpeg ^
@@ -170,7 +170,7 @@ echo on
      
 :: Note - webengine only built when you ask (nmake module-webengine) - so we can skip it easily.
      
-nmake Release
+nmake Debug
 if errorlevel 1 exit /b 1
 
 nmake install
